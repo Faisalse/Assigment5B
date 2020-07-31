@@ -20,6 +20,33 @@ public class Mlagent : MonoBehaviour
             ScreenNumber = 4;
             SceneManager.LoadScene(ScreenNumber);      
     }
+
+    public void MoveToCourseContent()
+    {
+        ScreenNumber = 9;
+        SceneManager.LoadScene(ScreenNumber);
+    }
+
+    public void MoveToMatchingGame()
+    {
+        ScreenNumber = 10;
+        SceneManager.LoadScene(ScreenNumber);
+    }
+
+
+    public void InstrutorWebsite()
+    {
+        Application.OpenURL("http://www.niazilab.com/");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
+
+
     public void MovetoMainMenu()
     {
         

@@ -11,8 +11,8 @@ public class PlayerCon : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioSource redAlert;
-    public AudioSource gameEnd;
-    public AudioSource backgroundMusic;
+    //public AudioSource gameEnd;
+    //public AudioSource backgroundMusic;
     public Text counterPalindrome;
     Rigidbody rb;
     int count;
@@ -61,7 +61,7 @@ public class PlayerCon : MonoBehaviour
         {         
             if (r)
             {
-                backgroundMusic.Stop();
+                //backgroundMusic.Stop();
                 text11.text = "YOU HAVE COLLECTED ALL PALINDROME! GAME OVER";
                 gameEndSound();
                 r = false;
@@ -234,7 +234,7 @@ public class PlayerCon : MonoBehaviour
     }
     else
     {
-     backgroundMusic.Stop();
+     //backgroundMusic.Stop();
      text11.text = "YOU HAVE COLLECTED ALL PALINDROME! GAME OVER";
      gameEndSound();
      }       
@@ -324,11 +324,11 @@ public class PlayerCon : MonoBehaviour
     }
     private void gameEndSound()
     {
-        gameEnd.Play();
+        //gameEnd.Play();
     }
     private void BackgroundMusic()
     {
-        backgroundMusic.Play();
+        //backgroundMusic.Play();
     }
 
 }
